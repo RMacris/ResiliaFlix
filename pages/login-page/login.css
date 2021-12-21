@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bakbak+One&family=Bebas+Neue&family=Black+Han+Sans&family=Fredoka+One&family=Hind+Madurai:wght@0&family=Montserrat:wght@100;400&family=Nunito:wght@200;700&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: auto;
+    background: url('../../img/dark-background.png');
+    background-size: cover;
+}
+
+#titulo{
+ color: white;
+ font-weight: bold;
+ display: flex;
+ width: 70%;
+ justify-content: flex-start;
+ margin-top: 60px;
+ margin-bottom: 28px;
+ font-family: 'Roboto', sans-serif;
+ 
+
+}
+
+#container{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#login{
+    width: 23%;
+    height: 68vh;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+}
+
+#login input{
+    width: 65%;
+    padding: 17px;
+    margin-bottom: 20px;
+    background-color: #353434;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    
+}
+
+.placeHolderLogin::placeholder{
+    color: #a5a3a3;
+}
+
+#btnEntrar{
+    width: 72%;
+    padding: 16px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background: red;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 24px 0 12px;
+}
