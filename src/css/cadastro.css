@@ -1,0 +1,122 @@
+.background-color{
+    background-color: black;
+    
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background: url('../img/dark-background-pages.png');
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-singup{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    
+}
+
+#div-titulo{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+    
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+
+}
+
+span{
+    color: red;
+}
+
+#form-singup{
+    border-radius: 5px;
+    width: 51%;
+    height: 71vh;
+    display: flex;
+    justify-content: center;
+     
+}
+
+#fildset-group{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+#fildset-group input{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 26px;
+    background-color: #353434;
+    color: white;
+
+}
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.input-group label{
+    color: white;
+    width: 80%;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+#btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 26px;
+
+}
+
+.btnCadastrar{
+    width: 40%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background: red;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+
