@@ -1,7 +1,6 @@
 class View{
     
     mostrarNoInput(response){
-      console.log(response.uf);
       $('#estado').val(response.uf)
       $('#cidade').val(response.localidade)
       $('#bairro').val(response.bairro)
@@ -9,7 +8,7 @@ class View{
         
     }
 
-    trataErro(response){
+    trataErroCep(response){
       if (response.erro === true) {
         $('#cepErro').text('CEP INVÁLIDO')
         $('#cepErro').css('color', 'red')
@@ -17,5 +16,14 @@ class View{
         $('#cepErro').text('CEP')
         $('#cepErro').css('color', 'white')
       }
+    }
+
+    erroCadastro(erro){
+      $('.titulo').text(erro)
+    }
+
+    cadastroSucesso(texto){
+      $('.titulo').text(texto)
+      $('#fildset-group').css('display', 'none')
     }
 }

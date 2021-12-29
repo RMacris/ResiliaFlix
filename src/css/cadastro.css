@@ -120,3 +120,24 @@ span{
     
 }
 
+
+@media (max-width: 700px)
+{
+    #fildset-group{
+        flex-direction: row;
+       
+    }
+
+    #form-singup{
+        width: auto;
+        height: auto;
+    }
+
+    .main-container{
+        height: auto;
+    }
+
+    .titulo{
+        font-size: 19px;
+    }
+}
