@@ -7,24 +7,6 @@ body{
     background-size: cover;
 }
 
-#titulo{
- display: flex;
- width: 70%;
- justify-content: flex-start;
- margin-top: 60px;
- margin-bottom: 28px;
-
-
- 
-
-}
-
-#titulo h1 {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-}
 
 #container{
     width: 100%;
@@ -36,49 +18,52 @@ body{
 }
 
 
-#login{
-    width: 23%;
-    height: 68vh;
+.itens-esqueceu-senha{
+    width: 39%;
+    height: 55vh;
     border-radius: 7px;
     background: rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: white;
   
     
 }
 
-#login a{
-    color: red;
-    text-decoration: none;
+.itens-esqueceu-senha h3{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-#login input{
-    width: 70%;
-    padding: 17px;
-    margin-bottom: 20px;
-    background-color: #353434;
-    font-size: 16px;
+.itens-esqueceu-senha input{
+    width: 50%;
+    padding: 8px;
     border: none;
+    border-radius: 2px;
+}
+
+#btnEnviar{
+    border: none;
+    padding: 5px;
+    width: 20%;
+    font-size: 17px;
     border-radius: 3px;
+    background-color: red;
     color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    
+
+}
+
+#div-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
-
-.placeHolderLogin::placeholder{
-    color: #a5a3a3;
-}
-
-#btnEntrar{
-    width: 70%;
-    padding: 16px;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    background: red;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 24px 0 12px;
-}
-
