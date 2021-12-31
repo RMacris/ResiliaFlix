@@ -1,5 +1,4 @@
 class View{
-    
     mostrarNoInput(response){
       $('#estado').val(response.uf)
       $('#cidade').val(response.localidade)
