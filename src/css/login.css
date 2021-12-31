@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Bakbak+One&family=Bebas+Neue&family=Black+Han+Sans&family=Fredoka+One&family=Hind+Madurai:wght@0&family=Montserrat:wght@100;400&family=Nunito:wght@200;700&family=Open+Sans:wght@300&family=Press+Start+2P&family=Roboto:wght@300;500&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
 
 body{
     height: auto;
@@ -12,16 +8,22 @@ body{
 }
 
 #titulo{
- color: white;
- font-weight: bold;
  display: flex;
  width: 70%;
  justify-content: flex-start;
  margin-top: 60px;
  margin-bottom: 28px;
- font-family: 'Roboto', sans-serif;
+
+
  
 
+}
+
+#titulo h1 {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 #container{
@@ -42,12 +44,18 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
   
     
 }
 
+#login a{
+    color: red;
+    text-decoration: none;
+}
+
 #login input{
-    width: 65%;
+    width: 70%;
     padding: 17px;
     margin-bottom: 20px;
     background-color: #353434;
@@ -63,7 +71,7 @@ body{
 }
 
 #btnEntrar{
-    width: 72%;
+    width: 70%;
     padding: 16px;
     border: none;
     color: white;
@@ -73,3 +81,4 @@ body{
     font-weight: bold;
     margin: 24px 0 12px;
 }
+
