@@ -8,6 +8,6 @@ $('#cep').blur(()=>{
 })
 
 
-$('#cadastrar').click(()=>{
+$('.btnCadastrar').click(()=>{
         controller.trataErroCadastro()
 })

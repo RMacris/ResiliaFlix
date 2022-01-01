@@ -38,6 +38,29 @@ body, html {
     margin-top: 30px;
     
     
+    
+}
+
+#texto-sucesso{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    display: none;
+    
+}
+
+#texto-sucesso h2{
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+#texto-sucesso a {
+    text-decoration: none;
+    color: red;
+    
 }
 
 .titulo{
@@ -46,6 +69,7 @@ body, html {
     font-size: 1.8em;
 
 }
+
 
 span{
     color: red;
