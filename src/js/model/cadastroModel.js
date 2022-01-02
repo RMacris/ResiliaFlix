@@ -1,4 +1,4 @@
-class Model{
+class CadastroModel{
    
     async recebeApi(cep){
     const url = `https://viacep.com.br/ws/${cep}/json/`
@@ -18,7 +18,7 @@ class Model{
              throw new Error('Insira todos os dados corretamente')
         }
    } catch (error) {
-        view.erroCadastro(error)
+           view.erroCadastro(error)
    }
    }
 }

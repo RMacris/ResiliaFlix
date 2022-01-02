@@ -1,7 +1,6 @@
-let controller = new Controller()
+let controller = new CadastroController()
 
 $('#cep').blur(()=>{
-   
         controller.api()
         
     

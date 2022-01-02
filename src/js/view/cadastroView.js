@@ -1,4 +1,4 @@
-class View{
+class CadastroView{
     mostrarNoInput(response){
       $('#estado').val(response.uf)
       $('#cidade').val(response.localidade)
@@ -22,7 +22,6 @@ class View{
     }
 
     cadastroSucesso(texto){
-
       $('.titulo').text(texto)
       $('#fildset-group').css('display', 'none')
       $('#texto-sucesso').css('display', 'flex')
