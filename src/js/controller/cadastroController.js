@@ -17,7 +17,9 @@ class CadastroController{
         let senha = $("#senha").val()
         let confSenha = $('#confSenha').val()
         let model = new CadastroModel()
-        model.validaDados(email, senha, confSenha, view)
+        let resultadoCadastro = model.validaDados(email, senha, confSenha, view)
+        view.erroCadastro(resultadoCadastro)
+        
      
    }
 }
