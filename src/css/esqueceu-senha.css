@@ -64,3 +64,16 @@ body{
     justify-content: center;
     
 }
+
+@media (max-width: 700px)
+{
+    .itens-esqueceu-senha{
+        width: 80%;
+        
+    }
+
+    #btnEnviar{
+        width: auto;
+    }
+
+}

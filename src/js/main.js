@@ -16,3 +16,9 @@ $('#btnEntrar').click((e)=>{
         e.preventDefault()
         loginController.trataErroLogin()
 })
+
+let esqueceuController = new EsqueceuController()
+
+$('#btnEnviar').click(()=>{
+        esqueceuController.trataErro()
+})
