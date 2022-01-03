@@ -23,11 +23,11 @@ class CadastroView{
 
     cadastroSucesso(texto){
       $('.titulo').text(texto)
-      $('#fildset-group').css('display', 'none')
+      $('#fieldset-cadastro').css('display', 'none')
       $('#texto-sucesso').css('display', 'flex')
       $('#btn').css('display', 'none')
-      $('.section-singup').css('width', '60%')
-      $('.section-singup').css('height', '40%')
-      $('#form-singup').css('height', '11vh')
+      $('#form-singup').css('flex-wrap', 'nowrap')
+      $('#form-singup').css('height', '40%')
+      $('#form-singup').css('justify-content', 'space-evenly')
     }
 }

@@ -6,7 +6,8 @@ $('#cep').blur(()=>{
     
 })
 
-$('.btnCadastrar').click(()=>{
+$('.btnCadastrar').click((e)=>{
+        e.preventDefault()
         controller.trataErroCadastro()
 })
 
