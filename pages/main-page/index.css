@@ -19,6 +19,12 @@ body{
 .selecao-filmes {
     width: 100%;
     height: 100%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
 }
 
 
