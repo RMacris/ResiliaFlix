@@ -1,12 +1,5 @@
 class MovieRequestController{
-    requestById(id){
-        let model = new MovieRequestModel()
-        
-        let result = model.requestMovieById(id)
-        console.log(result); //debug
 
-        return result
-     }
     requestById(id){
 
         let model = new MovieRequestModel()

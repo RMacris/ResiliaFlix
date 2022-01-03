@@ -1,0 +1,10 @@
+header{
+
+}
+
+.fixed-top{
+    padding: 24px var(--header-content-horizontal-padding);
+}
+.container-fluid {
+    padding: 0 !important;
+}

@@ -12,3 +12,4 @@ class MainPageView {
         //TODO: set it's data 
     }
 }
+
