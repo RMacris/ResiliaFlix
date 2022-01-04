@@ -130,25 +130,18 @@ span{
 }
 
 
-@media (max-height: 830px)
-{
-    .btnCadastrar{
-        padding: 3px;
-    }
-    
-}
 
 @media (max-width: 900px){
 #form-singup {
     height: auto;
     width: 80%;
-    padding-top: 25%;
+    padding-top: 14%;
     
 
 }
 
 .titulo{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #login {
@@ -166,3 +159,19 @@ span{
 
 
 }
+
+
+ @media (max-height: 830px){
+      #form-singup {
+      margin-top: 5%;
+      height: 80%;
+                    
+        
+        }
+        .btnCadastrar{
+            padding: 3px;
+            width: auto;
+        }
+    }
+
+ 

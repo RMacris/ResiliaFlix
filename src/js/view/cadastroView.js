@@ -30,7 +30,8 @@ class CadastroView{
       $('#form-singup').css('flex-wrap', 'nowrap')
       $('#form-singup').css('height', 'auto')
       $('#div-titulo').css('margin-bottom', '30px')
-      $('#form-singup').css('padding-top', '0')
+      $('#form-singup').css('padding-top', '10px')
+      $('#form-singup').css('padding-bottom', '10px')
       $('.main-container').css('height', '90vh')
     }
 }
