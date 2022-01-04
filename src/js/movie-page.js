@@ -7,7 +7,7 @@ window.onload = async function() {
     let controller = new MovieRequestController();
     let movieId = GetMovieIdFromUrl()
     let response = await controller.requestById(movieId)
-    let response = await controller.requestById_Test()
+    // let response = await controller.requestById_Test()
 
     view.PopualtePage(response)
 }

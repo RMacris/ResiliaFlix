@@ -45,7 +45,7 @@ section {
 
 .movie-recomendations { 
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(var(--card-size), 1fr) );
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -63,7 +63,7 @@ section {
 }
 
 .card-size-std {
-    width: 240px;
+    width: var(--card-size);
 }
 
 .card-img-overlay{
