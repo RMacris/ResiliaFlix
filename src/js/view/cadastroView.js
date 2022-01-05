@@ -1,15 +1,13 @@
-class View{
-    
+class CadastroView{
     mostrarNoInput(response){
-      console.log(response.uf);
-      $('#estado').val(response.uf)
-      $('#cidade').val(response.localidade)
-      $('#bairro').val(response.bairro)
-      $('#rua').val(response.logradouro) 
+      $('#inputEstado').val(response.uf)
+      $('#inputCidade').val(response.localidade)
+      $('#inputBairro').val(response.bairro)
+      $('#inputRua').val(response.logradouro) 
         
     }
 
-    trataErro(response){
+    trataErroCep(response){
       if (response.erro === true) {
         $('#cepErro').text('CEP INVÁLIDO')
         $('#cepErro').css('color', 'red')
@@ -18,4 +16,10 @@ class View{
         $('#cepErro').css('color', 'white')
       }
     }
+
+    erroCadastro(erro){
+      $('.titulo').text(erro)
+    }
+
+    
 }
