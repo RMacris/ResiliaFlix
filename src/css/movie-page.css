@@ -98,6 +98,10 @@ section {
     font-size: 0.85rem !important;
 }
 
+.page-intro{
+    padding: 24px 48px;
+    text-align: center;
+}
 
 @media (max-width: 800px) {
     main {

@@ -26,3 +26,8 @@
     object-fit: cover;
 }
 
+@media (max-width:650px) {
+    .container-card { 
+        flex-direction: column;
+    }
+}

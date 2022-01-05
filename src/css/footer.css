@@ -26,3 +26,9 @@ footer > * {
 .social-media-list > li {
     margin-right: 10px;
 }
+
+@media (max-width: 640px) {
+    footer{
+        flex-direction: column;
+    }
+}

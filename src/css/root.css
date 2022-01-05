@@ -41,8 +41,6 @@ ul,ol {
     --bg-red-color: rgb(255, 0, 0) !important;
     --bg-blue-color: rgb(13, 110, 253) !important;
 
-    /* --bg-std-color: black !important;
-    --bg-comp-color: black !important; */
 
     --card-size: 280px;
     --card-size-height: 380px;
@@ -87,6 +85,22 @@ body > * {
 
 .result-search-error{
     display: none;
+}
+
+
+.title-highlight {
+    color: rgb(200, 202, 255);
+
+}
+
+.link-highlight{
+    color: rgb(200, 202, 255);
+    cursor: pointer;
+}
+.link-highlight:hover {
+    text-decoration: underline;
+    color: rgb(146, 148, 218);
+
 }
 
 @media (max-width: 300px) {
