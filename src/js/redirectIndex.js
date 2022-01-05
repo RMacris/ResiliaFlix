@@ -1,5 +1,5 @@
 
 
 window.onload = function () { 
-    window.location.href = './src/html/cadastro-login/login.html'
+    window.location.href = './src/html/main-page/main-page.html'
 }
