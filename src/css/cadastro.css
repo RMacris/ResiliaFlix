@@ -44,20 +44,15 @@ body, html {
 }
 
 .btn-color{
-    background: var(--bg-red-color);
     border: none;
     color: white;
     
   
 }
 
-.btn-color:hover{
-    background-color: rgb(250, 75, 75);
-    color: white;
-}
 
 span{
-    color: var(--bg-red-color);
+    color: var( --bg-blue-color);
 }
 
 #texto-sucesso{

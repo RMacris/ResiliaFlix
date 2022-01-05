@@ -43,14 +43,7 @@ body{
 }
 
 #btnEnviar{
-    border: none;
-    padding: 5px;
-    width: 20%;
-    font-size: 17px;
-    border-radius: 3px;
-    background-color: var(--bg-red-color);
-    color: white;
-    font-weight: bold;
+    background-color: var( --bg-blue-color);
     margin-top: 15px;
     
 

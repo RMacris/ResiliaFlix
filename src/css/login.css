@@ -55,11 +55,11 @@ body{
 }
 
 span{
-    color: var(--bg-red-color);
+    color: var(--bg-blue-color);
 }
 
 .btn-color{
-    background: var(--bg-red-color);
+    background: var(--bg-blue-color);
     border: none;
     margin-top: 16px;
 }
