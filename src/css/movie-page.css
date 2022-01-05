@@ -1,0 +1,94 @@
+
+main { 
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--bg-comp-color);    
+
+}
+.info-section {
+}
+section {
+    width: 100%;
+}
+.movie-info-core{
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+}
+
+.movie-info { 
+    width: 100%;
+    margin-left: 24px;
+}
+
+.movie-aditional-info { 
+    display: flex;
+    flex-direction: row;
+}
+.movie-aditional-info > * { 
+    margin-right: 24px;
+}
+.recomendation-section {
+
+    margin-top: 2rem
+}
+.movie-recomendation-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.movie-recomendation-container > h3 { 
+    margin-bottom: 24px;
+}
+
+.movie-recomendations { 
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(var(--card-size), 1fr) );
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.movie-recomendations > * { 
+    margin: 24px auto;
+    /* margin-right: 24px; */
+    /* margin-bottom: 24px; */
+}
+
+.cursor-pointer{ 
+    cursor: pointer;
+}
+
+.card-size-std {
+    width: var(--card-size);
+}
+
+.card-img-overlay{
+    opacity: 0;
+    transition: ease-in-out 0.2s;
+    background-color: rgba(0,0,0,0.6);
+}
+.card-img-overlay:hover{
+    opacity: 1;
+    backdrop-filter: blur(1px);
+}
+
+.card-text {
+    font-size: 0.85rem !important;
+}
+
+
+@media (max-width: 300px) {
+    main{
+        width: 100%;
+    }
+    .card-size-std {
+        width: 100%;
+    }
+    .movie-info-core {
+        flex-direction: column;
+    }
+}
