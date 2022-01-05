@@ -99,12 +99,27 @@ section {
 }
 
 
+@media (max-width: 800px) {
+    main {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .movie-banner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .movie-info-core {
+        flex-direction: column;
+    }
+}
 @media (max-width: 300px) {
     main{
         width: 100%;
     }
     .card-size-std {
-        width: 100%;
+        width: auto;
     }
     .movie-info-core {
         flex-direction: column;
