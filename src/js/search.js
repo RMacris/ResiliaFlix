@@ -2,11 +2,13 @@
 
 $('input[type=search]').on('change', WaitInputFinishToRequest)
 $('input[type=search]').on('keyup', SearchOnPressEnter)
-
+$('#BtnSearch').on('click', )
 
 
 let time = null
 function WaitInputFinishToRequest(e) {
+    if(e.target.value.lenght == 0 ) return;
+    
     clearTimeout(time)
     time = setTimeout(async () => {
         // read input 
@@ -27,7 +29,8 @@ function WaitInputFinishToRequest(e) {
 }
 
 
-function SearchOnPressEnter(e) { 
+function SearchOnPressEnter(e) {
+    if(e.target.value.lenght == 0 ) return;
     if (e.keyCode === 13) {
         const targetValue = e.target.value.toString()
         console.log(targetValue)
@@ -36,10 +39,27 @@ function SearchOnPressEnter(e) {
             RemoveUrlParams('i')
             RedirectAndAddUrlQuery('../search-result/search-result-page.html', 's', targetValue)
         }else{
-            HandleSearch(targetValue)
+            RemoveUrlParams('i')
+            RedirectAndAddUrlQuery('../search-result/search-result-page.html', 's', targetValue)
         }
     }
+}
 
+function SearchOnBtnClick(){
+    if($('#BtnSearch').val().length > 0) return;
+    const targetValue = $('BtnSearch').val()
+    console.log(targetValue)
+    console.log('Enter is pressed!');
+    if(!window.location.href.includes('search-result-page'))
+    {
+        RemoveUrlParams('i')
+        RedirectAndAddUrlQuery('../search-result/search-result-page.html', 's', targetValue)
+    }
+    else
+    {
+        RemoveUrlParams('i')
+        RedirectAndAddUrlQuery('../search-result/search-result-page.html', 's', targetValue)
+    }
 }
 
 async function HandleSearch(search){ 
@@ -48,7 +68,7 @@ async function HandleSearch(search){
     console.log(search)
     //request
     let movieRequestController = new MovieRequestController();
-    const result = await movieRequestController.resquestByTitle(targetValue)
+    const result = await movieRequestController.resquestByTitle(search)
 
     console.log(result)
 

@@ -7,7 +7,6 @@ footer{
     padding: 24px var(--footer-content-horizontal-padding);
     margin-top: 24px;
 
-    
 }
 
 footer > * {
@@ -22,4 +21,8 @@ footer > * {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+}
+
+.social-media-list > li {
+    margin-right: 10px;
 }

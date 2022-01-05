@@ -79,8 +79,16 @@ main {
 
 }
 
+.movie-recomendation-title { 
+    margin-left: 24px ;
+}
+
 body > * { 
     /* overflow-x: hidden; */
+}
+
+.result-search-error{
+    display: none;
 }
 
 @media (max-width: 300px) {
