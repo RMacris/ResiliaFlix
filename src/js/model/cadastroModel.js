@@ -9,7 +9,7 @@ class CadastroModel{
    }
 
 
-   validaDados(email, senha, confirmSenha, cep){
+   validaDados(email, senha, confirmSenha, cep, func){
     try {
         if ((email.indexOf('@') > -1 && senha.length >= 8) && (confirmSenha === senha && cep.length > 0)) {
            return window.location.href = '../../html/cadastro-login/login.html'
@@ -17,9 +17,9 @@ class CadastroModel{
         } else {
              throw new Error('Insira todos os dados corretamente')
         }
-   } catch (error) {
-           return error
-   }
+    } catch (error) {
+        func.erroCadastro(error)     
+    }
    }
 
  
