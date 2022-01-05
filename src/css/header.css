@@ -3,7 +3,7 @@ header{
 }
 
 .fixed-top{
-    padding: 24px var(--header-content-horizontal-padding);
+    padding: 0 var(--header-content-horizontal-padding);
 }
 .container-fluid {
     padding: 0 !important;

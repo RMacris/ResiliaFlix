@@ -6,8 +6,6 @@ body{
 
 
 #container{
-    width: 100%;
-    height:93vh;
     display: flex;
     align-items: center;
     justify-content: center;

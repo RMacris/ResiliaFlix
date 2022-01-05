@@ -1,0 +1,113 @@
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: var(--card-size-contato);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    background-color: #191735;
+    box-shadow: 
+    0px 0px 8px 0px rgba(0, 0, 0, 0.1),
+    0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+    box-sizing: content-box;
+    padding: 24px;
+    
+}
+
+.link-style{
+    text-decoration: none;
+    color: #c6bfff;
+}
+
+.link-style:hover{
+    text-decoration: underline;
+    color: #4281a4;
+}
+
+.link-style:active{
+    color: #4281a4;
+}
+
+.card:hover{ 
+    
+    transition: 0.4s ease-in-out;
+    box-shadow: 
+    0px 0px 30px 20px rgb(37, 69, 105),
+    0px 0px 4px 0px #5c677d;
+    z-index: 10;
+}
+
+.card__img-container{
+    width: 100%;
+    min-height: var(--card-size-contato);
+    max-height: var(--card-size-contato);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 100%;
+    
+}
+.img-container__img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.card__img-title{
+    font-size: 1.4rem;
+    padding: 10px 10px 0 10px; 
+}
+.card__description {
+
+    text-align: justify;
+    padding: 0px 10px; 
+    font-size: 0.99rem; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin: 8px 0 0 0;
+}
+
+
+@media ((min-width: 601px) and (max-width: 960)) {
+    .card__img-title{
+        font-size: 0.8rem;
+
+    }
+    .card__description{ 
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        /* display: inline-block; */
+        width:100vw;
+        height: auto;
+        min-height: 100vw;
+        max-width: 100vw;
+        box-sizing: content-box;
+        padding: 0;
+    }
+    .card__img-container{
+        display: block;
+        min-height: 74vw;
+        max-height: 90vw;
+    }
+
+    .card__img-title{
+        margin-top: 8px;
+    }
+
+    .card__description{
+        display: none;
+        margin-top: 8px;
+        margin-bottom: 8px;
+
+
+    }
+}

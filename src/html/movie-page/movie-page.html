@@ -8,6 +8,7 @@
 
 
     <link href="../../css/root.css" rel="stylesheet">
+    <link href="../../css/icons.css" rel="stylesheet">
     <link href="../../css/header.css" rel="stylesheet">
     <link href="../../css/footer.css" rel="stylesheet">
     <link href="../../css/movie-page.css" rel="stylesheet">
@@ -17,35 +18,84 @@
 </head>
 <body>
     
-    <header>
-
-    </header>
+    <header clsas='bg-dark'>
+        <!--cabeçalho-->
+  
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+  
+            <a class="navbar-brand" href="../main-page/main-page.html">R.E.S.I.L.I.A FLIX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../main-page/main-page.html">Home</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="../cadastro-login/cadastro.html">Cadastro</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="../contatos/contatos.html">Contatos</a>
+                </li>
+              </ul>
+  
+              <div class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit" id="BtnSearch">Search</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
     <main>
         <section class='info-section'>
             <!-- filme info -->
             <div class='movie-info-core'>
                 <div class='movie-banner-container'>
                     <div class="card card-size-std bg-dark text-white">
-                        <img id="#banner" src="https://images-ext-1.discordapp.net/external/YvDm6lhUS6anLK_F7hjlMMzHZIKxmAgMNV7G6SPlCGM/https/m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg%40._V1_SX300.jpg" class="card-img" alt="...">
+                        <img id="banner" src="" class="card-img" alt="...">
                     </div>
                 </div>
                 <div class='movie-info'>
-                    <h3 id='title'>title</h3>
-                    <h3 id='title2'>title</h3>
-                    <p id='description'>The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego</p>
-                    <p id='awards'>awards</p>
-                    <p id='language'>Language</p>
+                <h3    id='title'>title</h3>
+                   <p class='info-highlight'>plot:     <span  id='description'>      </span>  </p>
+                   <p class='info-highlight'>awards:    <span  id='awards'>           </span>  </p>
+                   <p class='info-highlight'>Language:  <span  id='language'>         </span>  </p>
+                   <p class='info-highlight'>Atores:    <span  id='actors'>           </span>  </p>
+                   <p class='info-highlight'>Genero:    <span  id='genre'>            </span>  </p>
+                   <p class='info-highlight'>Escritor:  <span  id='writer'>           </span>  </p>
+                   <p class='info-highlight'>Duração:   <span  id='runtime'>          </span>  </p>
+                    
+                   <div class='movie-buttons'>
+                       <button type="button" class="btn btn-primary">Assistir</button>
+                   </div>
                 </div>
-                
-            </div>
-            <div class='movie-aditional-info'>
-                <div>MetaScore: 24px</div>
-                <div>MetaScore: 24px</div>
-                <div>MetaScore: 24px</div>
+                <div class='movie-aditional-info'>
+                    <!-- <div class='info-score-container'>
+                        <div class='score-wraper'>
+                            <i class="fa fa-mod fa-imdb" style="font-size:48px;"></i>
+                            <p id='score'>nota</p>
+                            
+                        </div>
+                        <div class='score-wraper'>
+                            <i class="fa fa-mod fa-imdb" style="font-size:48px;"></i>
+                            <p id='score'>nota</p>
+                            
+                        </div>
+                        <div class='score-wraper'>
+                            <i class="fa fa-mod fa-imdb" style="font-size:48px;"></i>
+                            <p id='score'>nota</p>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </section>
-        <section class='recomendation-section'>
-            <!-- recomendation -->
+        <!-- <section class='recomendation-section'>
             <div class='movie-recomendation-container'>
                 <h5>
                     Movie Recomendations For The Same Category
@@ -64,40 +114,39 @@
                     </div>                  
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>    
     
     <footer>
         <div>
             <h6>Perguntas Frequentes</h6>
             <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
+                <li><a href="#" class="footer-links">Como Assistir</a></li> 
+                <li><a href="#" class="footer-links">Como Criar uma Conta</a></li> 
+                <li><a href="#" class="footer-links">Como aplicar para o plano Carreiras ResiliaFlix </a></li> 
+                <li><a href="#" class="footer-links">Termos de Uso</a></li>
             </ul>
-
+            
         </div>
         <div>
             <h6>FAQ</h6>
             <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
+                <li><a href="#" class="footer-links">Só na ResiliaFlix</a></li> 
+                <li><a href="#" class="footer-links">Entre em Contato</a></li> 
+                <li><a href="#" class="footer-links">Privacidade</a></li> 
+                <li><a href="#" class="footer-links">Centro de Ajuda</a></li> 
+                <li><a href="#" class="footer-links">Relações com Investidores</a></li> 
+                <li><a href="#" class="footer-links">Imprensa</a></li> 
             </ul>
-
+  
         </div>
-        
-        
+  
+  
         <ul class='social-media-list'>
-            <li>    
+            <li>
                 <a href="#" class="fa fa-facebook"></a>
             </li>
-            <li>
-            </li>
+
             <li>
                 <a href="#" class="fa fa-instagram"></a>
             </li>
@@ -115,6 +164,8 @@
     <script src="../../js/model/movieRequestModel.js"></script>
     <script src="../../js/view/moviePageView.js"></script>
     <script src="../../js/movie-page.js"></script>
+    <script src="../../js/utils/ModifyURLParams.js"></script>
+    <script src="../../js/search.js"></script>
 
 </body>
 </html>

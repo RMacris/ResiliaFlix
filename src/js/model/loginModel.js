@@ -8,9 +8,7 @@ class LoginModel{
                  throw new Error('Dados incorretos')
             }
        } catch (error) {
-               return error
-       }
-       }
 
-       
+     } 
+}
 }
