@@ -1,7 +1,8 @@
 class LoginView{
     mostraErroLogin(erro){
-        $('.titulo-mensagem').text(erro)
-        $('.titulo-mensagem').css('font-size', '20px')
+        $('.titulo').text(erro)
+        $('.form-control').addClass('is-invalid')
+        $('.titulo').css('font-size', '20px')
     }
 
 }

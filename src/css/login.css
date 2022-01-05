@@ -4,24 +4,6 @@ body{
     background-size: cover;
 }
 
-#titulo{
- display: flex;
- width: 70%;
- justify-content: flex-start;
- margin-top: 60px;
- margin-bottom: 28px;
-
-
- 
-
-}
-
-#titulo h1 {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-   
-}
 
 #container{
     width: 100%;
@@ -32,69 +14,35 @@ body{
 
 }
 
-
-#login{
-    width: 23%;
-    height: 68vh;
-    border-radius: 7px;
-    background: var(--bg-comp-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-  
-    
+.titulo{
+    margin-bottom: 24px;
+}
+#div-titulo{
+    width: 100%;
 }
 
-#login a{
-    color: red;
-    text-decoration: none;
+.section-form{
+     height:auto;
+     background: var(--bg-comp-color);
+     padding: 24px;
+     border-radius: 0.5rem;
+     
 }
 
-#login input{
-    width: 70%;
-    padding: 17px;
-    margin-bottom: 20px;
-    background-color: #353434;
-    font-size: 16px;
+
+ 
+ .form-background {
+    padding: 24px;
+}
+
+.form-background input{
     border: none;
-    border-radius: 3px;
+    background-color: var(--bg-input-color);
     color: white;
-    
 }
 
-.placeHolderLogin::placeholder{
-    color: #a5a3a3;
-}
-
-#btnEntrar{
-    width: 70%;
-    padding: 16px;
+.btn-color{
+    background: var(--bg-red-color);
     border: none;
-    color: white;
-    border-radius: 5px;
-    background: red;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 24px 0 12px;
-}
-
-@media (max-width: 900px)
-{
-    #login{
-        width: 235px;
-        height: auto;
-    }
-
-    p{
-        font-size: 14px;
-    }
-}
-
-@media (max-height: 830px)
-{
-    #login{
-        height: auto;
-    }
-   
+    margin-top: 16px;
 }

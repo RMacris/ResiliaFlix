@@ -1,5 +1,5 @@
 let loginController = new LoginController()
-$('#btnEntrar').click((e)=>{
+$('.btn-color').click((e)=>{
         e.preventDefault()
         loginController.trataErroLogin()
 })

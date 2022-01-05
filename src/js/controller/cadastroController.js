@@ -1,7 +1,7 @@
 class CadastroController{
  async api(){
        let model = new CadastroModel()
-       let result = await model.recebeApi($('#cep').val())
+       let result = await model.recebeApi($('#inputCep').val())
        console.log(result);
        let view = new CadastroView()   
        view.mostrarNoInput(result)
@@ -13,11 +13,12 @@ class CadastroController{
 
    trataErroCadastro(){
         let view = new CadastroView()
-        let email = $('#email').val()
-        let senha = $("#senha").val()
-        let confSenha = $('#confSenha').val()
+        let email = $('#inputEmail').val()
+        let senha = $("#inputSenha").val()
+        let confSenha = $('#inputConfirm-senha').val()
+        let cep = $('#inputCep').val()
         let model = new CadastroModel()
-        let resultadoCadastro = model.validaDados(email, senha, confSenha, view)
+        let resultadoCadastro = model.validaDados(email, senha, confSenha, cep)
         view.erroCadastro(resultadoCadastro)
         
      

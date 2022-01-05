@@ -12,113 +12,75 @@
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
-  <header class='bg-dark'>
-    <!--cabeçalho-->
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-      <div class="container-fluid">
-
-        <a class="navbar-brand" href="#">R.E.S.I.L.I.A FLIX</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Cadastro</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
-            </li>
-          </ul>
-
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
       <div class="main">
-        <div class="main-container">
-        
-        <form action="" id="form-singup">
-          <div id="div-titulo">
-            <h1 class="titulo">Cadastre-se para garantir os <span>benefícios</span></h1>
-          </div>
-          <div id="texto-sucesso">
-            <h2>Uhu, agora você já é um membro da <span>ResiliaFlix!</span> Esperamos que curta bastante as nossas diversas
-               opções de séries e filmes. Caso queira fazer o login agora <a href="/src/html/login.html">clique aqui.</a></h2>
-          </div>
-           <fieldset id="fieldset-cadastro">
-              <div class="input-group">
-                <label for="inputNome">Nome</label>
-                 <input type="text" name="inputNome" placeholder="Digite seu nome">
-             </div>
-             <div class="input-group">
-              <label for="inputEmail">E-mail</label>
-              <input type="email" name="inputEmail" placeholder="email@dominio.com" id="email">
-             </div>
-             <div class="input-group">
-                <label for="inputSenha">Senha</label>
-                <input type="password" name="inputSenha" placeholder="Digite sua senha" id="senha">
-             </div>
-             <div class="input-group">
-                <label for="inputConfirma">Confirmação de senha</label>
-                <input type="password" name="inputConfirma" placeholder="Confirme sua senha" id="confSenha">
-              </div>
-              <div class="input-group">
-                <label for="inputRG">RG</label>
-                <input type="text" name="inputRG" placeholder="Digite seu RG">
-              </div>
-              <div class="input-group">
-                <label for="inputCep" id="cepErro">CEP</label>
-                <input type="text" name="inputCep" placeholder="Informe seu CEP" id="cep">
-              </div>
-              <div class="input-group">
-                <label for="inputEstado">Estado</label>
-                <input type="text" name="inputEstado" id="estado">
-              </div>
-              <div class="input-group">
-                <label for="inputCidade">Cidade</label>
-                <input type="text" name="inputCidade" id="cidade">
-               </div>
-               <div class="input-group">
-                <label for="inputBairro">Bairro</label>
-                <input type="text" name="inputBairro" id="bairro">
-              </div>
-              <div class="input-group">
-                <label for="Nome">Rua</label>
-                <input type="inputRua" name="inputRua" id="rua">
-              </div>
-              <div class="input-group">
-                <label for="inputNum">Número</label>
-                <input type="number" name="inputNum">
-              </div>
-              <div class="input-group">
-                <label for="inputComplemento">Complemento</label>
-                <input type="text" name="inputComplemento">
-             </div>
-             
-            
-             </fieldset>
-             <div id="btn">
-              <button class="btnCadastrar">Cadastrar</button>
-            </div>
-            </form> 
-          </div>
-          
-      
-    </div>   
+        <section class="section-form">
+         
+            <form class="row g-3 background-form" >
+                <h3 class="titulo">Cadastre-se para garantir os <span>benefícios</span></h3>
 
-    <footer>
+                <div id="texto-sucesso">
+                  <h2>Uhu, agora você já é um membro da <span>ResiliaFlix!</span> Esperamos que curta bastante as nossas diversas
+                     opções de séries e filmes. Caso queira fazer o login agora <a href="/src/html/login.html">clique aqui.</a></h2>
+                </div>
+              <div class="col-md-6">
+                <label for="inputNome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmai" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="inputEmail" placeholder="email@dominio.com">
+              </div>
+              <div class="col-md-6">
+                <label for="inputSenha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputSenha" placeholder="Digite sua senha">
+              </div>
+
+              <div class="col-md-6">
+                <label for="inputConfirm-senha" class="form-label">Confirmação de Senha</label>
+                <input type="password" class="form-control" id="inputConfirm-senha" placeholder="Confirme sua senha">
+              </div>
+              <div class="col-md-6">
+                <label for="inputRG" class="form-label">RG</label>
+                <input type="text" class="form-control" id="inputRG" placeholder="Digite seu RG">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCep" class="form-label" id="cepErro">CEP</label>
+                <input type="text" class="form-control" id="inputCep" placeholder="Informe seu CEP">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEstado" class="form-label">Estado</label>
+                <input type="text" class="form-control" id="inputEstado" placeholder="Informe seu estado">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade"  placeholder="Informe sua cidade">
+              </div>
+              <div class="col-md-6">
+                <label for="inputBairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="inputBairro"  placeholder="Informe seu bairro">
+              </div>
+              <div class="col-md-6">
+                <label for="inputRua" class="form-label">Rua</label>
+                <input type="text" class="form-control" id="inputRua"  placeholder="Informe sua rua">
+              </div>
+              <div class="col-md-6">
+                <label for="inputNumero" class="form-label">Número</label>
+                <input type="number" class="form-control" id="inputNumero"  placeholder="Informe o número">
+              </div>
+              <div class="col-md-6">
+                <label for="inputComplemento" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="inputComplemento"  placeholder="Informe o complemento">
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <button type="submit" class="btn btn-color btnCadastrar" >Cadastrar</button>
+              </div>
+            </form>
+      
+    </section>   
+   </div>
+    
+    <!-- <footer>
       <div>
           <h6>Perguntas Frequentes</h6>
           <ul>
@@ -156,7 +118,7 @@
               <a href="#" class="fa fa-linkedin"></a>
           </li>
       </ul>
-  </footer>
+  </footer> -->
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

@@ -1,10 +1,10 @@
 class LoginController{
     trataErroLogin(){
         let view = new LoginView()
-        let emailLogin = $('#emailLogin').val()
-        let senhaLogin = $('#senhaLogin').val()
+        let emailLogin = $('#inputEmail').val()
+        let senhaLogin = $('#inputSenha').val()
         let model = new LoginModel()
-        let resultadoLogin = model.validaDadosLogin(emailLogin, senhaLogin, view)
+        let resultadoLogin = model.validaDadosLogin(emailLogin, senhaLogin)
         view.mostraErroLogin(resultadoLogin)
         
         

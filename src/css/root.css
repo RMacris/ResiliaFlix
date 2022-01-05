@@ -34,6 +34,8 @@ ul,ol {
     --bg-footer-color: rgb(10, 10, 10) !important;
     --bg-std-color: rgb(22, 23, 24) !important;
     --bg-comp-color: rgb(13, 13, 15) !important;
+    --bg-input-color: rgb(53, 52, 52) !important;
+    --bg-red-color: rgb(255, 0, 0) !important;
 
     /* --bg-std-color: black !important;
     --bg-comp-color: black !important; */

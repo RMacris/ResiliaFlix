@@ -9,169 +9,62 @@ body, html {
 }
 
 
-.main-container{
+.main{
     width: 100%;
-    height:90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    flex-grow: 1;
   
 
 }
-
-
-#div-titulo{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    
-    
-    
-}
-
-#texto-sucesso{
-    color: white;
-    display: none;
-    
-}
-
-#texto-sucesso h2{
-    font-size: 30px;
-    text-align: center;
-    
-}
-
-#texto-sucesso a {
-    text-decoration: none;
-    color: red;
-    
-}
-
 .titulo{
-    color: white;
     text-align: center;
-    font-size: 30px;
 
+}
+
+.section-form{
+    width: 50%;
+    
+}
+
+
+
+.background-form{
+    background: var(--bg-comp-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.background-form input{
+    border: none;
+    background-color: var(--bg-input-color);
+    color: white;
+}
+
+.btn-color{
+    background: var(--bg-red-color);
+    border: none;
+    color: white;
+    
+  
+}
+
+.btn-color:hover{
+    background-color: rgb(250, 75, 75);
+    color: white;
 }
 
 span{
-    color: red;
+    color: var(--bg-red-color);
 }
 
-#form-singup{
-    width: 50%;
-    height: 70%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color:  var(--bg-comp-color);
-    border-radius: 8px;
-    
+#texto-sucesso{
+    display: none;
 }
 
-#fieldset-cadastro{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    
+#texto-sucesso a{
+    color: var(--bg-red-color);
+    text-decoration: none;
 }
-
-#form-singup input{
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #353434;
-    color: white;
-    margin-bottom: 5px;
-
-}
-.input-group{
-    width: auto;
-    display: block;
-}
-
-.input-group label{
-    color: white;
-    width: 96%;
-    padding-bottom: 2px;
-    display: flex;
-    align-items: flex-start;
-   
-    
-}
-
-#btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 26px;
-
-}
-
-.btnCadastrar{
-    width: 30%;
-    padding: 10px;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    background: red;
-    font-size: 17px;
-    font-weight: bold;
-    
-}
-
-
-
-@media (max-width: 900px){
-#form-singup {
-    height: auto;
-    width: 80%;
-    padding-top: 14%;
-    
-
-}
-
-.titulo{
-    font-size: 18px;
-}
-
-#login {
-    flex-direction: column;
-    height: 90%;
-}
-
-#fieldset-cadastro{
-    height: auto;
-}
-
-.main-container{
-    height: auto;
-}
-
-
-}
-
-
- @media (max-height: 830px){
-      #form-singup {
-      margin-top: 5%;
-      height: 80%;
-                    
-        
-        }
-        .btnCadastrar{
-            padding: 3px;
-            width: auto;
-        }
-    }
-
- 

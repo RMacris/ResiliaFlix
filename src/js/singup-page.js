@@ -1,5 +1,5 @@
 let controller = new CadastroController()
-$('#cep').blur(()=>{
+$('#inputCep').blur(()=>{
         controller.api()
 })
 
