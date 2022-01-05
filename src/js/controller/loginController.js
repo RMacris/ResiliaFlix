@@ -4,8 +4,8 @@ class LoginController{
         let emailLogin = $('#inputEmail').val()
         let senhaLogin = $('#inputSenha').val()
         let model = new LoginModel()
-        let resultadoLogin = model.validaDadosLogin(emailLogin, senhaLogin)
-        view.mostraErroLogin(resultadoLogin)
+         model.validaDadosLogin(emailLogin, senhaLogin, view)
+       
         
         
     }

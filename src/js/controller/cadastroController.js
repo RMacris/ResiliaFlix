@@ -18,8 +18,8 @@ class CadastroController{
         let confSenha = $('#inputConfirm-senha').val()
         let cep = $('#inputCep').val()
         let model = new CadastroModel()
-        let resultadoCadastro = model.validaDados(email, senha, confSenha, cep)
-        view.erroCadastro(resultadoCadastro)
+        model.validaDados(email, senha, confSenha, cep, view)
+        
         
      
    }
