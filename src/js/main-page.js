@@ -2,14 +2,19 @@
 
 window.onload = async function () { 
     // lista de ids de filmes selecionados pela equipe
-    const moviesId = [1,2,3,4,5,6]
+    const moviesId = [
+    'tt5978586','tt11192306','tt1673430','tt7142526',
+    'tt0193863','tt1781866','tt2216536','tt0388629',
+    'tt7052244','tt7984766','tt6517102','tt2560140'
+
+]
 
     let movieRequestController = new MovieRequestController();
 
     let factory = new CardFactory()
     const movieList = await moviesId.map( async movieId => {
         // request a movie data from each id
-        const result = await movieRequestController.requestById_Test()
+        const result = await movieRequestController.requestById(movieId)
         console.log(result)
         let card = factory.CardFactory(result,RedirectFromCard)
         
@@ -22,22 +27,6 @@ window.onload = async function () {
 
 
 function RedirectFromCard(id) {
-    
-   
+
     window.location.href = `../movie-page/movie-page.html?i=${id}`
-    
 }
-
-$('input[type=search]').on('change', async function(e) {
-
-    const targetValue = e.target.value
-    console.log(targetValue)
-    let movieRequestController = new MovieRequestController();
-    let factory = new CardFactory()
-    const result = await movieRequestController.resquestByTitle(targetValue)
-    let card = factory.CardFactory(result)
-
-    ///set the card somewhere
-
-
-})

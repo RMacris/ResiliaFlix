@@ -19,3 +19,4 @@ function GetMovieIdFromUrl(){
     const id = parameters.get('i');
     return id
 }
+

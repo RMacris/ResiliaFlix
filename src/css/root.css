@@ -43,11 +43,18 @@ ul,ol {
     --bg-comp-color: black !important; */
 
     --card-size: 280px;
-
+    --card-size-height: 380px;
+    --card-size-contato: 17vw;
     --margin-header: 56px;
 }
 
+.card { 
+    /* height: 420px */
+}
+.card-img { 
+    height: var(--card-size-height);
 
+}
 body {
     /* width: 100vw; */
     /* max-width: 100vw; */
@@ -69,7 +76,7 @@ main {
 }
 
 body > * { 
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 @media (max-width: 300px) {

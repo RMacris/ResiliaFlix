@@ -22,6 +22,16 @@ section {
     margin-left: 24px;
 }
 
+.info-highlight {
+    color: rgb(200, 176, 255);
+}
+.info-highlight::first-letter {
+    text-transform: capitalize ;
+}
+.info-highlight span  {
+    color: white !important; 
+}
+
 .movie-aditional-info { 
     display: flex;
     flex-direction: column;
@@ -77,7 +87,7 @@ section {
 .card-img-overlay{
     opacity: 0;
     transition: ease-in-out 0.2s;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
 }
 .card-img-overlay:hover{
     opacity: 1;

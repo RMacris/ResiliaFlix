@@ -1,9 +1,9 @@
+
 .card{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 15vw;
-    max-height: 25vw;
+    width: var(--card-size-contato);
     border-radius: 1.2rem;
     overflow: hidden;
     background-color: #191735;
@@ -18,7 +18,7 @@
 
 .link-style{
     text-decoration: none;
-    color: #f5efff;
+    color: #c6bfff;
 }
 
 .link-style:hover{
@@ -41,8 +41,8 @@
 
 .card__img-container{
     width: 100%;
-    min-height: 15vw;
-    max-height: 15vw;
+    min-height: var(--card-size-contato);
+    max-height: var(--card-size-contato);
     display: flex;
     justify-content: center;
     align-items: center;

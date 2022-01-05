@@ -11,7 +11,7 @@ class MovieRequestController{
     async resquestByTitle(title){
 
         let model = new MovieRequestModel()
-        let result = await model.requestMovieById(title)
+        let result = await model.requestMovieByTitle(title)
         console.log(result); //debug
 
         return result
@@ -23,4 +23,12 @@ class MovieRequestController{
         console.log(result); //debug
         return result
      }
+    HandleErrorResponse(callback) { 
+        callback()
+    }
+
+    RedirectToMainPage(){ 
+        window.location.href = '../main-page/main-page.js'
+    }
+    
   }
