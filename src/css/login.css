@@ -30,7 +30,6 @@ body{
 }
 
 
- 
  .form-background {
     padding: 24px;
 }
@@ -39,6 +38,24 @@ body{
     border: none;
     background-color: var(--bg-input-color);
     color: white;
+}
+#esqueci-senha-div{
+    margin-top: 5px;
+
+}
+
+.esqueci-senha{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.esqueci-senha:hover{
+    color: white;
+}
+
+span{
+    color: var(--bg-red-color);
 }
 
 .btn-color{

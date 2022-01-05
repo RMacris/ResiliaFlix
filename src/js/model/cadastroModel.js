@@ -12,7 +12,7 @@ class CadastroModel{
    validaDados(email, senha, confirmSenha, cep){
     try {
         if ((email.indexOf('@') > -1 && senha.length >= 8) && (confirmSenha === senha && cep.length > 0)) {
-           return window.location.href = '/src/html/login.html'
+           return window.location.href = '/src/html/cadastro-login/login.html'
             
         } else {
              throw new Error('Insira todos os dados corretamente')

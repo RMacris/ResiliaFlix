@@ -2,7 +2,6 @@ footer{
     display: flex;
     flex-direction: row;
     height: auto;
-    width: 100vw;
     background-color: var(--bg-comp-color);
     overflow: hidden;
     padding: 24px var(--footer-content-horizontal-padding);
