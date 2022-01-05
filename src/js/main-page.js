@@ -11,7 +11,7 @@ window.onload = async function () {
         // request a movie data from each id
         const result = await movieRequestController.requestById_Test()
         console.log(result)
-        let card = factory.CardFactory(result)
+        let card = factory.CardFactory(result,RedirectFromCard)
         
         //append the card generated in the movies list in html
         $('#PageMovies').append(card)
@@ -19,3 +19,25 @@ window.onload = async function () {
         // return await movieRequestController.requestById(movieId)
     })
 }
+
+
+function RedirectFromCard(id) {
+    
+   
+    window.location.href = `../movie-page/movie-page.html?i=${id}`
+    
+}
+
+$('input[type=search]').on('change', async function(e) {
+
+    const targetValue = e.target.value
+    console.log(targetValue)
+    let movieRequestController = new MovieRequestController();
+    let factory = new CardFactory()
+    const result = await movieRequestController.resquestByTitle(targetValue)
+    let card = factory.CardFactory(result)
+
+    ///set the card somewhere
+
+
+})

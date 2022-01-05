@@ -1,6 +1,5 @@
 class MoviePageView { 
-    constructor(){
-    }
+    tt3896198
     PopualtePage({Title='', Url='', Plot='',Awards=''}) {
         console.log(Title)
         this._SetTitle(Title)
@@ -22,7 +21,7 @@ class MoviePageView {
     }
     
     _SetAwards(awards){  
-        $('#awards').text(awards)
+        $('#awards').text('Awards: ' + awards)
 
     }
     

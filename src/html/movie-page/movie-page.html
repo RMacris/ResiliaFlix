@@ -8,6 +8,7 @@
 
 
     <link href="../../css/root.css" rel="stylesheet">
+    <link href="../../css/icons.css" rel="stylesheet">
     <link href="../../css/header.css" rel="stylesheet">
     <link href="../../css/footer.css" rel="stylesheet">
     <link href="../../css/movie-page.css" rel="stylesheet">
@@ -17,9 +18,40 @@
 </head>
 <body>
     
-    <header>
-
-    </header>
+    <header clsas='bg-dark'>
+        <!--cabeçalho-->
+  
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+  
+            <a class="navbar-brand" href="#">R.E.S.I.L.I.A FLIX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cadastro</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contatos</a>
+                </li>
+              </ul>
+  
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
     <main>
         <section class='info-section'>
             <!-- filme info -->
@@ -31,21 +63,37 @@
                 </div>
                 <div class='movie-info'>
                     <h3 id='title'>title</h3>
-                    <h3 id='title2'>title</h3>
                     <p id='description'>The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's encounter with his father the ambitious celestial being Ego</p>
+                    
+                </div>
+                <div class='movie-buttons'></div>
+                <div class='movie-aditional-info'>
+                    <div class='info-score-container'>
+                        <div class='score-wraper'>
+                            <i class="fa fa-mod fa-imdb" style="font-size:48px;"></i>
+                            <p id='score'>nota</p>
+                            
+                        </div>
+                        <div class='score-wraper'>
+                            <i class="fa fa-mod fa-imdb" style="font-size:48px;"></i>
+                            <p id='score'>nota</p>
+                            
+                        </div>
+                        <div class='score-wraper'>
+                            <i class="fa fa-mod fa-imdb" style="font-size:48px;"></i>
+                            <p id='score'>nota</p>
+                        </div>
+                    </div>
                     <p id='awards'>awards</p>
                     <p id='language'>Language</p>
+                    <p id='actors'>Atores</p>
+                    <p id='genre'>Genero</p>
+                    <p id='writer'>Escritor</p>
+                    <p id='runtime'>Duração</p>
                 </div>
-                
-            </div>
-            <div class='movie-aditional-info'>
-                <div>MetaScore: 24px</div>
-                <div>MetaScore: 24px</div>
-                <div>MetaScore: 24px</div>
             </div>
         </section>
-        <section class='recomendation-section'>
-            <!-- recomendation -->
+        <!-- <section class='recomendation-section'>
             <div class='movie-recomendation-container'>
                 <h5>
                     Movie Recomendations For The Same Category
@@ -64,47 +112,47 @@
                     </div>                  
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>    
     
     <footer>
-        <div>
-            <h6>Perguntas Frequentes</h6>
-            <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-            </ul>
-
-        </div>
-        <div>
-            <h6>FAQ</h6>
-            <ul>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-            </ul>
-
-        </div>
+            <div>
+                <h6>Perguntas Frequentes</h6>
+                <ul>
+                    <li><a href="#" class="footer-links">test</a></li>
+                    <li><a href="#" class="footer-links">test</a></li>
+                    <li><a href="#" class="footer-links">test</a></li>
+                    <li><a href="#" class="footer-links">test</a></li>
+                    <li><a href="#" class="footer-links">test</a></li>
+                </ul>
         
+            </div>
+            <div>
+                <h6>FAQ</h6>
+                <ul>
+                    <li><a href="#" class="footer-links">test</a></li>
+                    <li><a href="#" class="footer-links">test</a></li>
+                    <li><a href="#" class="footer-links">test</a></li>
+                    <li><a href="#" class="footer-links">test</a></li>
+                    <li><a href="#" class="footer-links">test</a></li>
+                </ul>
         
-        <ul class='social-media-list'>
-            <li>    
-                <a href="#" class="fa fa-facebook"></a>
-            </li>
-            <li>
-            </li>
-            <li>
-                <a href="#" class="fa fa-instagram"></a>
-            </li>
-            <li>
-                <a href="#" class="fa fa-linkedin"></a>
-            </li>
-        </ul>
+            </div>
+            
+            
+            <ul class=' '>
+                <li>    
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </li>
+            </ul>
     </footer>
     
     

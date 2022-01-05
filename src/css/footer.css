@@ -6,6 +6,21 @@ footer{
     background-color: var(--bg-comp-color);
     overflow: hidden;
     padding: 24px var(--footer-content-horizontal-padding);
+    margin-top: 24px;
+
+    
+}
+
+footer > * {
+    margin-right: 20%;
 }
 
 
+
+.social-media-list {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}

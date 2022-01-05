@@ -1,9 +1,17 @@
 class MovieRequestController{
 
-    requestById(id){
+    async requestById(id){
 
         let model = new MovieRequestModel()
-        let result = model.requestMovieById(id)
+        let result = await model.requestMovieById(id)
+        console.log(result); //debug
+
+        return result
+    }
+    async resquestByTitle(title){
+
+        let model = new MovieRequestModel()
+        let result = await model.requestMovieById(title)
         console.log(result); //debug
 
         return result

@@ -1,8 +1,9 @@
 
 main { 
-    width: 80%;
-    margin: 0 auto;
+    
+    margin: 0 var(--main-content-horizontal-padding);
     background-color: var(--bg-comp-color);    
+    margin-top: var(--margin-header);
 
 }
 .info-section {
@@ -23,10 +24,17 @@ section {
 
 .movie-aditional-info { 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-.movie-aditional-info > * { 
-    margin-right: 24px;
+
+.info-score-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.score-wraper > p {
+    margin-left: 5px;
 }
 .recomendation-section {
 

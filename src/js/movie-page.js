@@ -14,9 +14,8 @@ window.onload = async function() {
 
 
 function GetMovieIdFromUrl(){ 
-    let url = new URL(window.location.href);
-
-    // gets the id from the page url 
-    let id = url.searchParams.append('i', 42);
+    const queryString = window.location.search;
+    const parameters = new URLSearchParams(queryString);
+    const id = parameters.get('i');
     return id
 }
