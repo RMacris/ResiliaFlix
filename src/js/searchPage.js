@@ -8,9 +8,15 @@ window.onload = async function() {
 
     console.log(movieId)
     let response = await controller.resquestByTitle(movieId)
-    // let response = await controller.requestById_Test()
+    
+    
+    // let moreDataMovies = await response.Search.map(async  (element, index) => { 
+    //     // let movie = await controller.resquestById(element.imdbID)
+    //     // console.log(movie)
+    //     // return movie
+    // })
 
-    console.warn(response)
+    // console.warn(moreDataMovies)
     if(response.Response == 'True'){
         HideErrorMessage()
         for(let index in response.Search){

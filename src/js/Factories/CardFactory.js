@@ -3,6 +3,12 @@
 class CardFactory{
         
     CardFactory({Title='', Poster='', Plot='',Awards='',imdbID=''}, callback = function() {}){
+        Title   = this.ValidateNAResponse(Title)
+        Poster  = this.ValidateNAResponse(Poster),
+        Plot    = this.ValidateNAResponse(Plot),
+        Awards  = this.ValidateNAResponse(Awards),
+        imdbID  = this.ValidateNAResponse(imdbID)
+        
         let card =  $('<div>').addClass('card cursor-pointer card-size-std bg-dark text-white')
         let img =  $('<img>').addClass('card-img').attr('src', Poster)
         let overlay =  $('<div>').addClass('card-img-overlay')
@@ -20,17 +26,15 @@ class CardFactory{
         card.append(img, overlay, cardBody)
         return card
     }
+
+    ValidateNAResponse(text){ 
+        if(text == "N/A"){
+            return ''
+        }
+        return text
+    }
+    
 }
 
 
 
-{/* <div class="card-body"> */}
-    {/* <h5 class="card-title">Card title</h5> */}
-//// <div class="card cursor-pointer card-size-std bg-dark text-white">
-////     <img src="" class="card-img" alt="...">
-////     <div class="card-img-overlay">
-////         <h5 class="card-title">Card title</h5>
-////         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-////         <p class="card-text">Last updated 3 mins ago</p>
-////     </div>
-//// </div>
