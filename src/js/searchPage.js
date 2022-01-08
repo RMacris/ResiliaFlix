@@ -1,7 +1,6 @@
 
 
 window.onload = async function() { 
-    let view = new MoviePageView()
     let controller = new MovieRequestController();
     let movieId = GetMovieIdFromUrl()
     let factory = new CardFactory()
@@ -10,28 +9,22 @@ window.onload = async function() {
     let response = await controller.resquestByTitle(movieId)
     
     
-    // let moreDataMovies = await response.Search.map(async  (element, index) => { 
-    //     // let movie = await controller.resquestById(element.imdbID)
-    //     // console.log(movie)
-    //     // return movie
-    // })
-
-    // console.warn(moreDataMovies)
+    let moreDataMovies = await response.Search.map(async  (element, index) => { 
+        let movie = await controller.requestById(element.imdbID)
+        return movie
+    })
+    
     if(response.Response == 'True'){
         HideErrorMessage()
-        for(let index in response.Search){
-            console.log(index)
-        
-            if(response.Search[index].Poster != "N/A"){
-    
-                let card = factory.CardFactory(response.Search[index],RedirectFromCard)
-                $('#PageMovies').append(card)
-            }
+        Promise.all(moreDataMovies).then(result =>{
+            result.map(item => {
+                if(item.Poster != "N/A"){
             
-            //append the card generated in the movies list in html
-        }
-    
-        view.PopualtePage(response)
+                    let card = factory.CardFactory(item,RedirectFromCard)
+                    $('#PageMovies').append(card)
+                }
+            })
+        })
     }else{
         ShowErrorMessage()
     }
